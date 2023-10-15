@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#"id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+            </ul>
+            <a href="#" class="btn">RESERVE NOW</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2 id="mph">1.9 s</h2>
+                <p>70 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">220 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="range">340 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class="line">
+                <div>
+                    <h2 id="model">Model S</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var header = document.getElementById("header");
+        var ms = document.getElementById("models");
+        var m3 = document.getElementById("model3");
+        var mx = document.getElementById("modelx");
+        var my = document.getElementById("modely");
+        var model = document.getElementById("model");
+        var mph = document.getElementById("mph");
+        var speed = document.getElementById("speed");
+        var range = document.getElementById("range");
+
+
+        ms.onclick = function(){
+            header.style.backgroundImage = "url(image-1.png)";
+            model.innerHTML ="Model S";
+            mph.innerHTML ="3.2 s";
+            speed.innerHTML ="245 mph";
+            range.innerHTML ="340 mi";
+            
+        }
+        m3.onclick = function(){
+            header.style.backgroundImage = "url(image-2.png)";
+            model.innerHTML ="Model 3";
+            mph.innerHTML ="2 s";
+            speed.innerHTML ="240 mph";
+            range.innerHTML ="350 mi";
+        }
+        mx.onclick = function(){
+            header.style.backgroundImage = "url(image-3.png)";
+            model.innerHTML ="Model X";
+            mph.innerHTML ="2.2 s";
+            speed.innerHTML ="250 mph";
+            range.innerHTML ="380 mi";
+        }
+        my.onclick = function(){
+            header.style.backgroundImage = "url(image-4.png)";
+            model.innerHTML ="Model Y";
+            mph.innerHTML ="1.7 s";
+            speed.innerHTML ="210 mph";
+            range.innerHTML ="400 mi";
+        }
+
+
+
+
+    </script>
+</body>
+</html>
